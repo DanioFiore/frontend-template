@@ -2,6 +2,8 @@
 
 A comprehensive, reusable frontend template built with Next.js 15, TypeScript, and Tailwind CSS. This template provides a solid foundation for building modern web applications with seamless backend integration.
 
+The base of this template is taken from: [Nim](https://github.com/ibelick/nim)
+
 ## 🚀 Quick Start
 
 ### 1. Clone and Setup
@@ -374,9 +376,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🆘 Support
 
 - 📖 Check the [documentation](./docs/)
-- 🐛 [Report bugs](https://github.com/your-repo/issues)
-- 💡 [Request features](https://github.com/your-repo/issues)
-- 💬 [Discussions](https://github.com/your-repo/discussions)
+- 🐛 [Report bugs](https://github.com/frontend-template/issues)
+- 💡 [Request features](https://github.com/frontend-template/issues)
 
 ## 🎉 Acknowledgments
 
@@ -395,5 +396,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **GitHub**: [@DanioFiore](https://github.com/DanioFiore)
 - **LinkedIn**: [Danio Fiore](https://linkedin.com/in/danio-fiore/?locale=en_US)
 - **Email**: [daniofioredev@gmail.com](mailto:daniofioredev@gmail.com)
-
-Template used: [Nim](https://github.com/ibelick/nim)
