@@ -176,6 +176,8 @@ import {
     Mountain as Earth,
 } from 'lucide-react'
 
+import { APP_CONFIG } from '../config/app.config'
+
 // Navigation items configuration
 export const NAV_ITEMS = [
     { id: 'home', label: 'Home', href: '/', icon: Home },
@@ -183,19 +185,19 @@ export const NAV_ITEMS = [
 
 // Social links configuration
 export const SOCIAL_LINKS = [
-    { id: 'github', label: 'GitHub', href: 'https://github.com/DanioFiore', icon: Github },
-    { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/danio-fiore/?locale=en_US', icon: Linkedin },
+    { id: 'github', label: 'GitHub', href: APP_CONFIG.social.github, icon: Github },
+    { id: 'linkedin', label: 'LinkedIn', href: APP_CONFIG.social.linkedin, icon: Linkedin },
 ] as const
 
 // Company information
 export const COMPANY_INFO = {
-    name: 'Inkeisoft',
-    tagline: 'In Case Of Software',
-    description: 'Minimal Software development',
-    email: 'daniofioredev@gmail.com',
-    phone: '+39 340 959 7469',
-    address: 'Via Giustino Fortunato, 2 B/2, 70125 Bari, Italy',
-    website: 'https://www.inkeisoft.com',
+    name: APP_CONFIG.company.name,
+    tagline: APP_CONFIG.company.tagline,
+    description: APP_CONFIG.company.description,
+    email: APP_CONFIG.company.email,
+    phone: APP_CONFIG.company.phone,
+    address: APP_CONFIG.company.address,
+    website: APP_CONFIG.company.website,
 } as const
 
 // Animation variants
@@ -380,15 +382,15 @@ export const ACCESSIBILITY_CONFIG = {
 
 // SEO configuration
 export const SEO_CONFIG = {
-    title: 'Inkeisoft - In Case Of Software',
-    description: 'Minimal Software development',
-    keywords: ['about', 'danio fiore', 'software developer', 'inkeisoft', 'software engineering', 'minimalistic', 'minimal software development', 'clean code', 'php', 'vue.js', 'javascript', 'laravel', 'python', 'fastapi', 'mysql', 'sql', 'postgresql', 'web development','tech startup', 'modern development', 'user experience', 'performance optimization'],
-    author: 'Inkeisoft',
-    siteUrl: 'https://www.inkeisoft.com',
-    image: '/public/inkeisoft-logo.png',
-    twitterCard: 'summary_large_image',
-    locale: 'en_US',
-    type: 'website',
+    title: APP_CONFIG.seo.title,
+    description: APP_CONFIG.seo.description,
+    keywords: APP_CONFIG.seo.keywords,
+    author: APP_CONFIG.seo.author,
+    siteUrl: APP_CONFIG.seo.url,
+    image: APP_CONFIG.seo.image,
+    twitterCard: APP_CONFIG.seo.twitterCard,
+    locale: APP_CONFIG.seo.locale,
+    type: APP_CONFIG.seo.type,
 } as const
 
 // Performance configuration
@@ -425,7 +427,7 @@ export const ENV_CONFIG = {
     isProduction: process.env.NODE_ENV === 'production',
     isTest: process.env.NODE_ENV === 'test',
     apiUrl: process.env.NEXT_PUBLIC_API_URL || '',
-    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://inkeisoft.com',
+    siteUrl: process.env.NEXT_PUBLIC_SITE_URL || APP_CONFIG.url,
     analyticsId: process.env.NEXT_PUBLIC_ANALYTICS_ID || '',
 } as const
 

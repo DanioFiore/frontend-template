@@ -10,7 +10,6 @@ export const APP_CONFIG = {
     name: 'Your App Name',
     tagline: 'Your App Tagline',
     description: 'A brief description of your application',
-    version: '1.0.0',
     
     // URLs and Links
     url: 'https://your-domain.com',
@@ -19,6 +18,8 @@ export const APP_CONFIG = {
     // Company/Organization Info
     company: {
         name: 'Your Company',
+        tagline: 'Your Company Tagline',
+        description: 'A brief description of your company',
         email: 'contact@yourcompany.com',
         phone: '+1 (555) 123-4567',
         address: 'Your Address',
@@ -44,6 +45,7 @@ export const APP_CONFIG = {
         twitterCard: 'summary_large_image',
         locale: 'en_US',
         type: 'website',
+        url: 'https://your-domain.com',
     },
     
     // Feature Flags
