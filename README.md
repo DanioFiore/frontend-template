@@ -10,7 +10,7 @@ The base of this template is taken from: [Nim](https://github.com/ibelick/nim)
 
 ```bash
 # Clone the template
-git clone <your-repo-url> my-app
+git clone git@github.com:DanioFiore/frontend-template.git my-app
 cd my-app
 
 # Install dependencies
@@ -306,26 +306,6 @@ Connect to your backend:
 2. Modify API service interfaces as needed
 3. Update authentication logic if required
 
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-```bash
-# Deploy to Vercel
-npm i -g vercel
-vercel
-
-# Set environment variables in Vercel dashboard
-```
-
-### Other Platforms
-
-- **Netlify**: Works out of the box
-- **Railway**: Node.js hosting
-- **DigitalOcean**: App Platform
-- **AWS**: Amplify or EC2
-- **Google Cloud**: Cloud Run
-
 ### Environment Variables
 
 Set these in your deployment platform:
@@ -368,31 +348,3 @@ Comprehensive documentation is available in the `/docs` directory:
 3. Commit your changes: `git commit -m 'Add amazing feature'`
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-- 📖 Check the [documentation](./docs/)
-- 🐛 [Report bugs](https://github.com/frontend-template/issues)
-- 💡 [Request features](https://github.com/frontend-template/issues)
-
-## 🎉 Acknowledgments
-
-- Built with [Next.js](https://nextjs.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Animated with [Framer Motion](https://www.framer.com/motion/)
-- Icons by [Lucide](https://lucide.dev/)
-
----
-
-**Happy coding! 🚀**
-
-## Contact & Connect
-
-- **Website**: [inkeisoft.com](https://inkeisoft.com)
-- **GitHub**: [@DanioFiore](https://github.com/DanioFiore)
-- **LinkedIn**: [Danio Fiore](https://linkedin.com/in/danio-fiore/?locale=en_US)
-- **Email**: [daniofioredev@gmail.com](mailto:daniofioredev@gmail.com)
