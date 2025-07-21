@@ -89,6 +89,12 @@ const QUICK_START_STEPS = [
 		description: 'Run the development server and start building',
 		code: 'npm run dev',
 	},
+	{
+		step: '5',
+		title: 'Ask to AI',
+		description: 'If you are using an AI agent copilot, you can ask it to help you with the development. For example, you can give this prompt:',
+		code: 'Basing on the provided code, style and components structure, create a new page for XXXX. Add it to the navigation and make sure it is responsive and follows the design system.',
+	},
 ]
 
 function MagneticButton({
@@ -257,85 +263,6 @@ export default function TemplatePage() {
 	// Navigation configuration...
 	// Feature flags...
 }`}</CodeBlock>
-				</div>
-			</motion.section>
-
-			{/* Navigation Pages */}
-			<motion.section
-				variants={VARIANTS_SECTION}
-				transition={TRANSITION_SECTION}
-			>
-				<h3 className="mb-5 text-lg font-medium">Template Pages</h3>
-				<p className="mb-5 text-zinc-600 dark:text-zinc-400">
-					Explore the different pages and components included in this template:
-				</p>
-				<div className="flex flex-col space-y-0">
-					<AnimatedBackground
-						enableHover
-						className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-900/80"
-						transition={{
-							type: 'spring',
-							bounce: 0,
-							duration: 0.2,
-						}}
-					>
-						<Link
-							className="-mx-3 rounded-xl px-3 py-3"
-							href="/about"
-							data-id="about"
-						>
-							<div className="flex flex-col space-y-1">
-								<h4 className="font-normal dark:text-zinc-100">
-									About Page
-								</h4>
-								<p className="text-zinc-500 dark:text-zinc-400">
-									Learn more about the template and its features
-								</p>
-							</div>
-						</Link>
-						<Link
-							className="-mx-3 rounded-xl px-3 py-3"
-							href="/projects"
-							data-id="projects"
-						>
-							<div className="flex flex-col space-y-1">
-								<h4 className="font-normal dark:text-zinc-100">
-									Projects Page
-								</h4>
-								<p className="text-zinc-500 dark:text-zinc-400">
-									Showcase your work and projects
-								</p>
-							</div>
-						</Link>
-						<Link
-							className="-mx-3 rounded-xl px-3 py-3"
-							href="/contact"
-							data-id="contact"
-						>
-							<div className="flex flex-col space-y-1">
-								<h4 className="font-normal dark:text-zinc-100">
-									Contact Page
-								</h4>
-								<p className="text-zinc-500 dark:text-zinc-400">
-									Get in touch with a beautiful contact form
-								</p>
-							</div>
-						</Link>
-						<Link
-							className="-mx-3 rounded-xl px-3 py-3"
-							href="/blog"
-							data-id="blog"
-						>
-							<div className="flex flex-col space-y-1">
-								<h4 className="font-normal dark:text-zinc-100">
-									Blog Section
-								</h4>
-								<p className="text-zinc-500 dark:text-zinc-400">
-									MDX-powered blog with beautiful typography
-								</p>
-							</div>
-						</Link>
-					</AnimatedBackground>
 				</div>
 			</motion.section>
 
